@@ -1,0 +1,92 @@
+[
+    {
+      "title": "The Great Gatsby",
+      "authors": "F. Scott Fitzgerald",
+      "genre": "Classic",
+      "average_rating": 4.5,
+      "isbn": 1234567890,
+      "stock": 10,
+      "user_id": 1
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "authors": "Harper Lee",
+      "genre": "Classic",
+      "average_rating": 4.8,
+      "isbn": 9876543210,
+      "stock": 8,
+      "user_id": 2
+    },
+    {
+      "title": "1984",
+      "authors": "George Orwell",
+      "genre": "Dystopian",
+      "average_rating": 4.3,
+      "isbn": 5678901234,
+      "stock": 12,
+      "user_id": 3
+    },
+    {
+      "title": "Pride and Prejudice",
+      "authors": "Jane Austen",
+      "genre": "Romance",
+      "average_rating": 4.6,
+      "isbn": 3456789012,
+      "stock": 6,
+      "user_id": 1
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "authors": "J.D. Salinger",
+      "genre": "Coming-of-age",
+      "average_rating": 4.2,
+      "isbn": 2345678901,
+      "stock": 15,
+      "user_id": 2
+    },
+    {
+      "title": "The Hobbit",
+      "authors": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "average_rating": 4.7,
+      "isbn": 7890123456,
+      "stock": 9,
+      "user_id": 3
+    },
+    {
+      "title": "Moby-Dick",
+      "authors": "Herman Melville",
+      "genre": "Adventure",
+      "average_rating": 4.4,
+      "isbn": 4567890123,
+      "stock": 7,
+      "user_id": 4
+    },
+    {
+      "title": "War and Peace",
+      "authors": "Leo Tolstoy",
+      "genre": "Historical Fiction",
+      "average_rating": 4.9,
+      "isbn": 5678901234,
+      "stock": 11,
+      "user_id": 5
+    },
+    {
+      "title": "The Lord of the Rings",
+      "authors": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "average_rating": 4.8,
+      "isbn": 6789012345,
+      "stock": 13,
+      "user_id": 1
+    },
+    {
+      "title": "Crime and Punishment",
+      "authors": "Fyodor Dostoevsky",
+      "genre": "Psychological Fiction",
+      "average_rating": 4.5,
+      "isbn": 7890123456,
+      "stock": 5,
+      "user_id": 2
+    }
+  ]

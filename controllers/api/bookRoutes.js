@@ -43,7 +43,7 @@ router.post('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const projectData = await Book.destroy({
+    const bookData = await Book.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
