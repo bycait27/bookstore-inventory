@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>📚 Add a book to your wishlist! 📚</h3>
+
+    <form class="add-book-form">
+      <div class="form-group">
+        <label for="book-name">Book Name:</label>
+        <input class="form-input" type="text" id="book-name" name="book-name" />
+      </div>
+      <div class="form-group">
+        <label for="author-name">Author Name:</label>
+        <input class="form-input" type="number" id="author-name" name="author-name" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Add to wishlist!</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if books.length}}
+  <div class="col-md-6 wish-list">
+    <h3>📚 {{name}}'s Wishlist:</h3>
+
+    {{#each books as |book|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/books/{{book.id}}">{{book.title}}</a></h4>
+        <h5>By:<a href="/books/{{book.id}}">{{book.authors}}</a></h5>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{book.id}}">REMOVE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="../public/js/wishlist.js"></script>
