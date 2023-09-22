@@ -20,7 +20,7 @@ Book.init(
       allowNull: false,
     },
     genre: {
-      type: DataTyples.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     average_rating: {
@@ -28,7 +28,7 @@ Book.init(
       allowNull: false,
     },
     isbn: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.BIGINT,
       allowNull: false,
     },
     stock: {
@@ -49,6 +49,7 @@ Book.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'book',
+    tableName: 'books',
   }
 );
 
