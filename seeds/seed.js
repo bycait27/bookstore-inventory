@@ -1,4 +1,4 @@
-const { User, Book } = require('./models'); // Assuming your models are exported this way
+const { User, Book } = require('../models'); // Assuming your models are exported this way
 const userData = require('./userData.json'); // JSON file containing user data
 const bookData = require('./bookData.json'); // JSON file containing book data
 
