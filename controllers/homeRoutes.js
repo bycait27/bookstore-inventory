@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Book } = require('../models');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
@@ -14,6 +15,26 @@ router.get('/', async (req, res) => {
 
     // Pass serialized data into Handlebars.js template
     res.render('homepage', { books });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// Use withAuth middleware to prevent access to route
+router.get('/wishlist', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Book }],
+    });
+
+    const user = userData.get({ plain: true });
+
+    res.render('wishlist', {
+      ...user,
+      logged_in: true
+    });
   } catch (err) {
     res.status(500).json(err);
   }
