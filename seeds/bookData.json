@@ -79,14 +79,5 @@
       "isbn": 6789012345,
       "stock": 13,
       "user_id": 1
-    },
-    {
-      "title": "Crime and Punishment",
-      "authors": "Fyodor Dostoevsky",
-      "genre": "Psychological Fiction",
-      "average_rating": 4.5,
-      "isbn": 7890123456,
-      "stock": 5,
-      "user_id": 2
     }
   ]
