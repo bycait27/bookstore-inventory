@@ -40,4 +40,16 @@ router.get('/wishlist', withAuth, async (req, res) => {
   }
 });
 
+// get login and render it to user
+router.get('/login', (req, res) => {
+  // if the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/wishlist');
+    return;
+  }
+
+  res.render('login');
+});
+
+
 module.exports = router;
