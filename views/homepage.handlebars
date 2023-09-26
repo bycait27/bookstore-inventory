@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Inventory</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="open-page" class="container is-justify-content-center">
+        <div id="full-page">
+            <div id="sidebar">
+                <div>
+                    <ul>
+                        <li>Favorites</li>
+                        <li>Wishlist</li>
+                        <li>Filters</li>
+                        <li>Logout</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main-search">
+                <h1 id="title" class="">Books Galore...and more!</h1>
+                <div id="searchbar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div id="bookgrid">
+                    {{> cardList}}
+                </div>
+                <div id="changepage">
+                    <a href="" id="prev-page">Previous Page</a> |
+                    <a href="" id="next-page">Next Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

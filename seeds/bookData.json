@@ -6,7 +6,7 @@
       "average_rating": 4.5,
       "isbn": 1234567890,
       "stock": 10,
-      "user_id": 1
+      "user_id": 11
     },
     {
       "title": "To Kill a Mockingbird",
@@ -15,7 +15,7 @@
       "average_rating": 4.8,
       "isbn": 9876543210,
       "stock": 8,
-      "user_id": 2
+      "user_id": 12
     },
     {
       "title": "1984",
@@ -24,7 +24,7 @@
       "average_rating": 4.3,
       "isbn": 5678901234,
       "stock": 12,
-      "user_id": 3
+      "user_id": 13
     },
     {
       "title": "Pride and Prejudice",
@@ -33,7 +33,7 @@
       "average_rating": 4.6,
       "isbn": 3456789012,
       "stock": 6,
-      "user_id": 1
+      "user_id": 11
     },
     {
       "title": "The Catcher in the Rye",
@@ -42,7 +42,7 @@
       "average_rating": 4.2,
       "isbn": 2345678901,
       "stock": 15,
-      "user_id": 2
+      "user_id": 12
     },
     {
       "title": "The Hobbit",
@@ -51,7 +51,7 @@
       "average_rating": 4.7,
       "isbn": 7890123456,
       "stock": 9,
-      "user_id": 3
+      "user_id": 13
     },
     {
       "title": "Moby-Dick",
@@ -60,7 +60,7 @@
       "average_rating": 4.4,
       "isbn": 4567890123,
       "stock": 7,
-      "user_id": 4
+      "user_id": 14
     },
     {
       "title": "War and Peace",
@@ -69,7 +69,7 @@
       "average_rating": 4.9,
       "isbn": 5678901234,
       "stock": 11,
-      "user_id": 5
+      "user_id": 15
     },
     {
       "title": "The Lord of the Rings",
@@ -78,6 +78,6 @@
       "average_rating": 4.8,
       "isbn": 6789012345,
       "stock": 13,
-      "user_id": 1
+      "user_id": 11
     }
   ]
