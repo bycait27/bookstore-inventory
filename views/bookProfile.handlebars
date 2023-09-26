@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Inventory</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../public/css/bookprofstyle.css">
+</head>
+
+<body>
+    <div id="open-page" class="container is-justify-content-center">
+        <div id="full-page">
+            <div id="sidebar">
+                <div>
+                    <ul>
+                        <li id="wishlist">Wishlist</li>
+                        <li id="logout">Logout</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div id="title">
+                    <h1>Books Galore</h1>
+                </div>
+                <div id="bookimg">
+                    <img src="bookimageplaceholder.webp" alt="">
+                </div>
+                <div id="booktitle">
+                    <p>Title:</p>
+                    <h2 id="titlebook">"{{book.title}}"</h2>
+                </div>
+                <div id="author">
+                    <p>By:</p>
+                    <h2 id="authorbook">"{{book.author}}"</p>
+                </div>
+            </div>
+            <div id="back">
+                <a href="" id="back">Back</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../public/js/bookprofile.js"></script>
+
+</html>
