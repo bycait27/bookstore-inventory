@@ -2,28 +2,42 @@ const router = require('express').Router();
 const { Book } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+// Function to retrieve book data
+const getBookData = async () => {
   try {
-    // Get all books, sorted by name
     const bookData = await Book.findAll({
       attributes: { exclude: ['genre', 'average_rating', 'isbn', 'stock', 'user_id'] },
       order: [['title', 'ASC']],
     });
 
-    // Serialize user data so templates can read it
-    const books = bookData.map((index) => index.get({ plain: true }));
+    return bookData.map((book) => book.get({ plain: true }));
+  } catch (err) {
+    throw err;
+  }
+};
 
-    // Pass serialized data into Handlebars.js template
+router.get('/', async (req, res) => {
+  try {
+    const books = await getBookData();
     res.render('homepage', { books });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-// Use withAuth middleware to prevent access to route
+router.get('/dashboard', withAuth, async (req, res) => {
+  try {
+    // Retrieve the necessary data, for example, from your database
+    const books = await getBookData(); // Replace with your actual data retrieval logic
+
+    res.render('dashboard', { books, layout: false }); // Pass the 'books' data
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/wishlist', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Book }],
@@ -40,16 +54,14 @@ router.get('/wishlist', withAuth, async (req, res) => {
   }
 });
 
-// get login and render it to user
 router.get('/login', (req, res) => {
-  // if the user is already logged in, redirect the request to another route
+  // If the user is already logged in, redirect to the dashboard
   if (req.session.logged_in) {
-    res.redirect('/wishlist');
+    res.redirect('/dashboard');
     return;
   }
 
-  res.render('login');
+  res.render('login', { layout: false }); // Render without layout
 });
-
 
 module.exports = router;
