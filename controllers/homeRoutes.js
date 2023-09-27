@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Book } = require('../models');
+const { Book, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 // Function to retrieve book data
@@ -47,7 +47,8 @@ router.get('/wishlist', withAuth, async (req, res) => {
 
     res.render('wishlist', {
       ...user,
-      logged_in: true
+      logged_in: true,
+      layout: false
     });
   } catch (err) {
     res.status(500).json(err);
