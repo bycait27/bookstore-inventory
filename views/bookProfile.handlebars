@@ -16,8 +16,8 @@
             <div id="sidebar">
                 <div>
                     <ul>
-                        <li id="wishlist">Wishlist</li>
-                        <li id="logout">Logout</li>
+                        <a href="/wishlist"><li id="wishlist">Wishlist</li></a>
+                        <a href="/"><li id="logout">Logout</li></a>
                     </ul>
                 </div>
             </div>
@@ -30,20 +30,20 @@
                 </div>
                 <div id="booktitle">
                     <p>Title:</p>
-                    <h2 id="titlebook">"{{book.title}}"</h2>
+                    <h2 id="titlebook">"{{book.dataValues.title}}"</h2>
                 </div>
                 <div id="author">
                     <p>By:</p>
-                    <h2 id="authorbook">"{{book.author}}"</p>
+                    <h2 id="authorbook">"{{book.dataValues.authors}}"</p>
                 </div>
             </div>
             <div id="back">
-                <a href="" id="back">Back</a>
+                <a href="/dashboard" id="back">Back</a>
             </div>
         </div>
 
     </div>
 </body>
-<script src="../public/js/bookprofile.js"></script>
+<script src="/js/bookprofile.js"></script>
 
 </html>

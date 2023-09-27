@@ -43,13 +43,16 @@ router.get('/book/:id', async (req, res) => {
     // Query your database to find the book with the specified ID
     const book = await Book.findByPk(bookId);
 
+
     if (!book) {
       // Handle the case where the book is not found, e.g., render an error page
       return res.status(404).render('error', { message: 'Book not found' });
     }
     
+    console.log(book);
     // Render the book profile page with the book data
-    res.render('bookProfile', { book });
+    res.render('bookProfile', { book, layout: false });
+
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Server error' });
