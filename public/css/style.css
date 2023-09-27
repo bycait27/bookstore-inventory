@@ -48,6 +48,15 @@
     flex-direction: column;
 }
 
+#login-signup {
+    display: flex;
+}
+
 .loginbtn {
     align-self: center;
+}
+
+.sign-up {
+    margin-left: 30px;
+    margin-bottom: 30px;
 }

@@ -1,0 +1,46 @@
+#open-page {
+    width: 700px;
+    height: 800px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+#open-page::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: -10px;
+    bottom: -10px;
+    width: 88%;
+    height: 100%;
+    background: rgba(2, 123, 210, 0.825);
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#full-page {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#signuptitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+#title {
+    color: black;
+    text-align: center;
+}
+
+#sidebar {
+    width: 100px;
+    height: 100%;
+    border-right: 1px solid black;
+    flex-shrink: 0;
+}
