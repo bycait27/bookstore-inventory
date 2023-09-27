@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS books_db;
+DROP DATABASE IF EXISTS bookstore_db;
 
-CREATE DATABASE books_db;
+CREATE DATABASE bookstore_db;
 
-USE books_db;
+USE bookstore_db;
 
 -- Create the users table
 CREATE TABLE users (
