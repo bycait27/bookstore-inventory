@@ -21,7 +21,7 @@ CREATE TABLE books (
   authors VARCHAR(255) NOT NULL,
   genre VARCHAR(255) NOT NULL,
   average_rating DECIMAL(5, 2) NOT NULL,
-  isbn BIGINT NOT NULL,
+  isbn VARCHAR(255) NOT NULL,
   stock INT NOT NULL,
   user_id INT,
   createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
