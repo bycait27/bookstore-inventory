@@ -28,7 +28,7 @@ Book.init(
       allowNull: false,
     },
     isbn: {
-      type: DataTypes.BIGINT,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     stock: {
