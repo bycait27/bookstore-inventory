@@ -1,83 +1,164 @@
 [
-    {
+  {
       "title": "The Great Gatsby",
       "authors": "F. Scott Fitzgerald",
       "genre": "Classic",
       "average_rating": 4.5,
-      "isbn": 1234567890,
+      "isbn": "9780743273565",
       "stock": 10,
       "user_id": 1
-    },
-    {
+  },
+  {
       "title": "To Kill a Mockingbird",
       "authors": "Harper Lee",
       "genre": "Classic",
       "average_rating": 4.8,
-      "isbn": 9876543210,
+      "isbn": "0446310786",
       "stock": 8,
       "user_id": 2
-    },
-    {
+  },
+  {
       "title": "1984",
       "authors": "George Orwell",
       "genre": "Dystopian",
       "average_rating": 4.3,
-      "isbn": 5678901234,
+      "isbn": "1785996312",
       "stock": 12,
       "user_id": 3
-    },
-    {
+  },
+  {
       "title": "Pride and Prejudice",
       "authors": "Jane Austen",
       "genre": "Romance",
       "average_rating": 4.6,
-      "isbn": 3456789012,
+      "isbn": "0866118713",
       "stock": 6,
-      "user_id": 1
-    },
-    {
+      "user_id": 4
+  },
+  {
       "title": "The Catcher in the Rye",
       "authors": "J.D. Salinger",
       "genre": "Coming-of-age",
       "average_rating": 4.2,
-      "isbn": 2345678901,
+      "isbn": "0553239767",
       "stock": 15,
-      "user_id": 2
-    },
-    {
+      "user_id": 5
+  },
+  {
       "title": "The Hobbit",
       "authors": "J.R.R. Tolkien",
       "genre": "Fantasy",
       "average_rating": 4.7,
-      "isbn": 7890123456,
+      "isbn": "0458920304",
       "stock": 9,
-      "user_id": 3
-    },
-    {
+      "user_id": 6
+  },
+  {
       "title": "Moby-Dick",
       "authors": "Herman Melville",
       "genre": "Adventure",
       "average_rating": 4.4,
-      "isbn": 4567890123,
+      "isbn": "9780848801830",
       "stock": 7,
-      "user_id": 4
-    },
-    {
+      "user_id": 7
+  },
+  {
       "title": "War and Peace",
       "authors": "Leo Tolstoy",
       "genre": "Historical Fiction",
       "average_rating": 4.9,
-      "isbn": 5678901234,
+      "isbn": "0140444173",
       "stock": 11,
-      "user_id": 5
-    },
-    {
-      "title": "The Lord of the Rings",
+      "user_id": 8
+  },
+  {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
       "authors": "J.R.R. Tolkien",
       "genre": "Fantasy",
       "average_rating": 4.8,
-      "isbn": 6789012345,
+      "isbn": "1594130078",
       "stock": 13,
+      "user_id": 9
+  },
+  {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "authors": "J.K. Rowling",
+      "genre": "Fantasy",
+      "average_rating": 4.9,
+      "isbn": "9780590353427",
+      "stock": 18,
       "user_id": 1
-    }
-  ]
+  },
+  {
+      "title": "The Hunger Games",
+      "authors": "Suzanne Collins",
+      "genre": "Dystopian",
+      "average_rating": 4.2,
+      "isbn": "0439023483",
+      "stock": 20,
+      "user_id": 2
+  },
+  {
+      "title": "The Da Vinci Code",
+      "authors": "Dan Brown",
+      "genre": "Mystery",
+      "average_rating": 4.0,
+      "isbn": "0307277674",
+      "stock": 9,
+      "user_id": 3
+  },
+  {
+      "title": "The Alchemist",
+      "authors": "Paulo Coelho",
+      "genre": "Adventure",
+      "average_rating": 4.4,
+      "isbn": "0061122416",
+      "stock": 7,
+      "user_id": 4
+  },
+  {
+      "title": "Lord of the Flies",
+      "authors": "William Golding",
+      "genre": "Adventure",
+      "average_rating": 4.0,
+      "isbn": "0786516682",
+      "stock": 11,
+      "user_id": 5
+  },
+  {
+      "title": "The Road",
+      "authors": "Cormac McCarthy",
+      "genre": "Post-apocalyptic",
+      "average_rating": 4.1,
+      "isbn": "0307277925",
+      "stock": 14,
+      "user_id": 6
+  },
+  {
+      "title": "Brave New World",
+      "authors": "Aldous Huxley",
+      "genre": "Dystopian",
+      "average_rating": 4.2,
+      "isbn": "0060120355",
+      "stock": 10,
+      "user_id": 7
+  },
+  {
+      "title": "The Shining",
+      "authors": "Stephen King",
+      "genre": "Horror",
+      "average_rating": 4.2,
+      "isbn": "0385121679",
+      "stock": 12,
+      "user_id": 8
+  },
+  {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "authors": "Douglas Adams",
+      "genre": "Science Fiction",
+      "average_rating": 4.5,
+      "isbn": "0671432419",
+      "stock": 17,
+      "user_id": 9
+  }
+]

@@ -6,7 +6,6 @@ const withAuth = require('../utils/auth');
 const getBookData = async () => {
   try {
     const bookData = await Book.findAll({
-      attributes: { exclude: ['genre', 'average_rating', 'isbn', 'stock', 'user_id'] },
       order: [['title', 'ASC']],
     });
 
