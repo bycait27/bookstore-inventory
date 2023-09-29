@@ -39,13 +39,33 @@
             <h3 class="content is-medium">📚 Add a book to your wishlist! 📚</h3>
             <form class="add-book-form box">
               <div class="form-group label">
-                <label for="book-name">Book Name:</label>
-                <input class="form-input input is-small" type="text" id="book-name" name="book-name" />
+                <label for="choose-book">Choose a book:</label>
+                <select id="choose-book" name="choose-book" multiple>
+                  <option data-id="1" value="great-gatsby">The Great Gatsby</option>
+                  <option value="kill-mockingbird">To Kill a Mockingbird</option>
+                  <option value="1984">1984</option>
+                  <option value="pride-prejudice">Pride and Prejudice</option>
+                  <option value="catcher-rye">The Catcher in the Rye</option>
+                  <option value="hobbit">The Hobbit</option>
+                  <option value="moby-dick">Moby-Dick</option>
+                  <option value="war-peace">War and Peace</option>
+                  <option value="lord-rings">The Lord of the Rings: The Fellowship of the Ring</option>
+                  <option value="harry-potter">Harry Potter and the Sorcerer's Stone</option>
+                  <option value="hunger-games">The Hunger Games</option>
+                  <option value="da-vinci-code">The Da Vinci Code</option>
+                  <option value="alchemist">The Alchemist</option>
+                  <option value="lord-flies">Lord of the Flies</option>
+                  <option value="the-road">The Road</option>
+                  <option value="brave-new-world">Brave New World</option>
+                  <option value="shining">The Shining</option>
+                  <option value="hitchhiker-guide-galaxy">The Hitchhiker's Guide to the Galaxy</option>
+                </select>
+                {{!-- <input class="form-input input is-small" type="text" id="book-name" name="book-name" /> --}}
               </div>
-              <div class="form-group">
+              {{!-- <div class="form-group">
                 <label class="label" for="author-name">Author Name:</label>
                 <input class="form-input input is-small" type="text" id="author-name" name="author-name" />
-              </div>
+              </div> --}}
               <div class="form-group mt-3 columns is-centered">
                 <button class="button has-text-info is-outlined" type="submit">Add to wishlist!</button>
               </div>
