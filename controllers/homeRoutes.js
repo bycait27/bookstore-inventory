@@ -35,7 +35,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
   }
 });
 
-router.get('/book/:id', async (req, res) => {
+router.get('/books/:id', async (req, res) => {
   try {
     const bookId = req.params.id;
 
