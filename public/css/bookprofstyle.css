@@ -34,7 +34,9 @@
     height: 100%;
     border-right: 1px solid black;
     flex-shrink: 0;
-
+    box-shadow: 2px 0 8px 1px rgb(60, 60, 60), -7px 0 8px rgb(164, 164, 164) inset;
+    z-index: 3;
+    left: 0;
 }
 
 #sidebar ul {
