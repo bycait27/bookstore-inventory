@@ -49,8 +49,7 @@ Book.init(
     freezeTableName: true,
     underscored: true,
     modelName: 'book',
-    tableName: 'books',
-  }
+    }
 );
 
 module.exports = Book;
