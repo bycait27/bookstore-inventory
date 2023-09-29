@@ -28,6 +28,18 @@ router.get('/:id', async (req, res) => {
     }
   });
 
+  router.get('/count', (req, res) => {
+    db.query('SELECT COUNT(*) AS totalBooks FROM books', (error, results) => {
+      if (error) {
+        console.error('Error:', error);
+        return res.status(500).json({ error: 'An error occurred' });
+      }
+  
+      const totalBooks = results[0].totalBooks;
+      res.json({ totalBooks });
+    });
+  });
+
 router.post('/', withAuth, async (req, res) => {
   try {
     const newBook = await Book.create({
