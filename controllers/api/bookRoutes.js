@@ -53,6 +53,35 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+// Add a new route to handle updating the book's user_id (adding it to the user's wishlist)
+router.put('/:id', withAuth, async (req, res) => {
+  try {
+    // Get the user's ID from the session
+    const userId = req.session.user_id;
+
+    // Get the book's ID from the request parameters
+    const bookId = req.params.id;
+
+    // Find the book by ID
+    const book = await Book.findByPk(bookId);
+
+    if (!book) {
+      return res.status(404).json({ message: 'No book found with that ID.' });
+    }
+
+    // Add the user_id property to the book
+    book.user_id = userId;
+
+    // Save the updated book
+    await book.save();
+
+    res.status(200).json({ message: 'Book added to wishlist successfully!' });
+  } catch (err) {
+    console.error('Error:', err);
+    res.status(500).json({ error: 'An error occurred while adding the book to the wishlist.' });
+  }
+});
+
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const bookData = await Book.destroy({
