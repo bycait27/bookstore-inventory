@@ -50,11 +50,17 @@
 
 .listlink a {
     color: rgb(54, 54, 54);
+    background-color: yellow;
+
 }
 
 .listlink:hover {
     font-weight: 900;
 
+}
+
+#mainsearch {
+    max-height: 50%;
 }
 
 #searchbar {
@@ -80,8 +86,12 @@
     width: 30%;
     margin: 5px auto;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 3px;
     text-align: center;
+}
+
+.bookblocks img {
+    max-height: 240px;
 }
 
 #changepage {
