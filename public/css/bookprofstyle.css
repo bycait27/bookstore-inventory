@@ -43,6 +43,17 @@
     margin: 2px;
 }
 
+.listlink a {
+    color: rgb(54, 54, 54);
+    background-color: yellow;
+
+}
+
+.listlink:hover {
+    font-weight: 900;
+
+}
+
 #bookimg {
     display: flex;
     justify-content: center;
