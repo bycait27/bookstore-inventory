@@ -59,13 +59,15 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.post('/logout', (req, res) => {
+// Logout route
+router.get('/logout', (req, res) => {
   if (req.session.logged_in) {
+    // Destroy the user's session
     req.session.destroy(() => {
-      res.status(204).end();
+      res.status(204).end(); // Respond with success status (204 No Content)
     });
   } else {
-    res.status(404).end();
+    res.status(404).end(); // Respond with not found status (404)
   }
 });
 
