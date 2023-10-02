@@ -13,9 +13,9 @@
 <body>
   <section id="open-page" class="container is-justify-content-center">
     <div id="full-page">
-            <div id="sidebar">
-                {{> sideBar}}
-            </div>
+      <div id="sidebar">
+        {{> sideBar}}
+      </div>
       <div class="welcomeinput">
         <div>
           <div>
@@ -29,14 +29,15 @@
           <div class="wish-list">
             {{#each books as |book|}}
             <div class="bookblocks">
-              <div class="">
+              <div class="bookblockinterior">
                 <img id="bookimg" src="https://covers.openlibrary.org/b/isbn/{{book.isbn}}-M.jpg">
                 <h4><a href="/books/{{book.id}}">{{book.title}}</a></h4>
                 <h5>By:<a href="/books/{{book.id}}">{{book.authors}}</a></h5>
+                <div id="removediv">
+                  <button class="button has-text-info is-outlined is-small" data-id="{{book.id}}">REMOVE</button>
+                </div>
               </div>
-              <div class="">
-                <button class="button has-text-info is-outlined is-small" data-id="{{book.id}}">REMOVE</button>
-              </div>
+
             </div>
             {{/each}}
           </div>

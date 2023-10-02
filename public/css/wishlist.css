@@ -39,14 +39,6 @@
     margin: 2px;
 }
 
-#bookimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    width: 60%;
-}
-
 .warandpeace {
     font-style: italic;
 }
@@ -62,8 +54,13 @@
 
 }
 
+.welcomeinput {
+    margin-left: 10px;
+}
+
 .wishlist-container {
     text-align: center;
+
 }
 
 .wish-list {
@@ -94,11 +91,31 @@
 }
 
 .bookblocks {
-    width: 30%;
+    width: 190px;
+    height: 330px;
     margin: 5px auto;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 3px;
     text-align: center;
+}
+
+.bookblocks img {
+    width: auto;
+    height: 200px;
+}
+
+.bookblockinterior {
+    flex-grow: 2;
+    margin: 0;
+    position: relative;
+}
+
+#bookimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
 }
 
 .add-book-form.box {
