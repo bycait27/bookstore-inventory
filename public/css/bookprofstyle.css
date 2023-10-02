@@ -20,13 +20,7 @@
 
 #full-page {
     display: flex;
-    align-items: flex-start;
     height: 100%;
-}
-
-#title {
-    color: black;
-    text-align: center;
 }
 
 #sidebar {
@@ -62,39 +56,69 @@
     width: 60%;
 }
 
+#title-wishbtn {
+    margin-top: 10px;
+}
 
 #booktitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
-    font-size: 35px;
+    margin-top: 20px;
     font-weight: bold;
 
 }
 
 #booktitle h2 {
     font-style: italic;
-    font-weight: bold;
-    margin-left: 10px;
+    font-size: 20px;
 
 }
 
-#author {
+.bookinfo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
-    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
-#author h2 {
-    font-style: italic;
-    margin-left: 10px;
+.bookinfo h2 {
+    margin-left: 3px;
 }
 
-#goback {
+#back {
+    margin-top: 20px;
+}
+
+#rightside {
+    display: flex;
+    flex: column;
+}
+
+#title {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
     position: absolute;
-    top: 10px;
-    left: 110px;
+
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    margin-top: 20px;
+}
+
+#add-to-wishlist {
+    margin-top: 10px;
 }

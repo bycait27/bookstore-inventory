@@ -16,40 +16,50 @@
             <div id="sidebar">
                 {{> sideBar}}
             </div>
-            <div id="content">
+            <div id="rightside">
                 <div id="title">
                     <h1>Books Galore</h1>
                 </div>
-                <div id="bookimg">
-                    <img src="https://covers.openlibrary.org/b/isbn/{{book.dataValues.isbn}}-L.jpg">
-                </div>
-                <div id="booktitle">
-                    <p>Title:</p>
-                    <h2 id="titlebook">{{book.dataValues.title}}</h2>
-                </div>
-                <div id="author">
-                    <p>By:</p>
-                    <h2 id="authorbook">{{book.dataValues.authors}}</p>
-                </div>
-                <div id="genre">
-                    <p>Genre:</p>
-                    <h2 id="genrebook">{{book.dataValues.genre}}</p>
-                </div>
-                <div id="rating">
-                    <h2 id="ratingbook">{{book.dataValues.average_rating}}</p>
-                </div>
-                <div id="stock">
-                    <p>Copies in stock:</p>
-                    <h2 id="stockbook">{{book.dataValues.stock}}</p>
-                </div>
-                <!-- Add the "Add to Wishlist" button -->
-                <div id="add-to-wishlist">
-                    <button class="button has-text-info is-outlined" type="button">Add to Wishlist</button>
+                <div id="content-container">
+                    <div id="content">
+                        <div id="imgtitle">
+                            <div id="bookimg">
+                                <img src="https://covers.openlibrary.org/b/isbn/{{book.dataValues.isbn}}-L.jpg">
+                            </div>
+                        </div>
+                        <div id="title-wishbtn">
+                            <div id="booktitle">
+                                <p>Title:</p>
+                                <h2 id="titlebook">{{book.dataValues.title}}</h2>
+                            </div>
+                            <div class="bookinfo" id="author">
+                                <p>By: </p>
+                                <h2 id="authorbook"> {{book.dataValues.authors}}</p>
+                            </div>
+                            <div id="genre" class="bookinfo">
+                                <p>Genre:</p>
+                                <h2 id="genrebook">{{book.dataValues.genre}}</p>
+                            </div>
+                            <div id="rating" class="bookinfo">
+                                <p>Rating:</p>
+                                <h2 id="ratingbook">{{book.dataValues.average_rating}}</p>
+                            </div>
+                            <div id="stock" class="bookinfo">
+                                <p>Copies in stock:</p>
+                                <h2 id="stockbook">{{book.dataValues.stock}}</p>
+                            </div>
+                            <!-- Add the "Add to Wishlist" button -->
+                            <div id="add-to-wishlist">
+                                <button class="button has-text-info is-outlined" type="button">Add to Wishlist</button>
+                            </div>
+                            <div id="back">
+                                <a href="/dashboard" id="back">Back</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="back">
-                <a href="/dashboard" id="back">Back</a>
-            </div>
+
         </div>
 
     </div>
