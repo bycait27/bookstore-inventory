@@ -91,7 +91,7 @@ document.getElementById('search-button').addEventListener('click', () => {
   filterBooks(query);
 });
 
-// Event handler for search input changes (real-time search)
+// Event handler for search input changes
 document.getElementById('search-input').addEventListener('input', () => {
   const searchInput = document.getElementById('search-input');
   const query = searchInput.value.trim().toLowerCase();
