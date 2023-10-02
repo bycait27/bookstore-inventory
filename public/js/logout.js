@@ -7,7 +7,7 @@ const logoutHandler = async () => {
       });
   
       if (response.ok) {
-        // If successful, redirect the browser to the login page or another page
+        // If successful, redirect the browser to the login page or another page.
         document.location.replace('/');
       } else {
         alert('Failed to log out.');
