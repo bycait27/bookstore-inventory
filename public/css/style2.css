@@ -55,10 +55,19 @@
 
 .listlink:hover {
     font-weight: 900;
+
+}
+
+#rightside {
+    margin-left: 10px;
 }
 
 #main-search {
     max-height: 50%;
+}
+
+#search-container {
+    width: 580px;
 }
 
 #searchbar {
@@ -70,10 +79,19 @@
 
 #searchbar input {
     padding: 10px;
-    width: 98%;
+    width: 100%;
     border: 1px solid #ccc;
     outline: none;
 }
+
+#search-button {
+    padding: 10px;
+    background-color: #0073d2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 
 #bookgrid {
     display: flex;
@@ -81,15 +99,20 @@
 }
 
 .bookblocks {
-    width: 30%;
+    width: 190px;
+    height: 330px;
     margin: 5px auto;
     border: 1px solid #ccc;
     padding: 3px;
     text-align: center;
 }
 
+.bookblocks div {
+    padding: 10px;
+}
+
 .bookblocks img {
-    max-height: 240px;
+    height: 200px;
 }
 
 #changepage {

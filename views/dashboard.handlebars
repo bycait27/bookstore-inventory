@@ -16,23 +16,30 @@
             <div id="sidebar">
                 {{> sideBar}}
             </div>
-            <div id="main-search">
-                <h1 id="title" class="">Books Galore...and more!</h1>
-                <div id="searchbar">
-                    <input type="text" id="search-input" placeholder="Search">
-                    <button id="search-button">Search</button>
-                </div>
-                <div id="bookgrid">
-                    {{> cardList}}
-                </div>
-                <div id="changepage">
-                    <a href="#" id="prev-page">Previous Page</a> |
-                    <a href="#" id="next-page">Next Page</a>
+            <div id="rightside">
+                <div id="search-container">
+                    <div id="main-search">
+                        <h1 id="title" class="">Books Galore!</h1>
+                        <div id="searchbar">
+                            <input type="text" id="search-input" placeholder="Search">
+                            <button id="search-button">Search</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="bookgrid">
+                            {{> cardList}}
+                        </div>
+                        <div id="changepage">
+                            <a href="#" id="prev-page">Previous Page</a> |
+                            <a href="#" id="next-page">Next Page</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="/js/dashboard.js"></script>
+    <script src="/js/logout.js"></script>
 </body>
 
 </html>
