@@ -96,6 +96,10 @@
     flex: column;
 }
 
+.warandpeace {
+    font-style: italic;
+}
+
 #title {
     color: black;
     font-size: 30px;
