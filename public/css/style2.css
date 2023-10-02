@@ -1,3 +1,4 @@
+/* Default styles for desktop view */
 #open-page {
     width: 700px;
     height: 800px;
@@ -37,7 +38,6 @@
     box-shadow: 2px 0 8px 1px rgb(60, 60, 60), -7px 0 8px rgb(164, 164, 164) inset;
     z-index: 3;
     left: 0;
-
 }
 
 #sidebar ul {
@@ -55,13 +55,14 @@
 
 .listlink:hover {
     font-weight: 900;
+
 }
 
 #rightside {
     margin-left: 10px;
 }
 
-#mainsearch {
+#main-search {
     max-height: 50%;
 }
 
@@ -118,4 +119,46 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    #open-page {
+        width: 100%;
+        height: auto;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #title {
+        text-align: center;
+        display: none; /* Hide the title text in mobile view */
+    }
+
+    #sidebar {
+        display: none; /* Hide the sidebar in mobile view */
+    }
+
+    #searchbar {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #searchbar input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bookblocks {
+        width: 100%;
+        color: white; /* Text color for book titles and authors */
+        padding: 10px; /* Add padding for better readability */
+    }
+
+    #changepage {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
