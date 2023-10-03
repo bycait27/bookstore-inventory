@@ -1,4 +1,16 @@
-/* Default styles for desktop view */
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
 #open-page {
     width: 700px;
     height: 800px;
@@ -133,11 +145,13 @@
 
     #title {
         text-align: center;
-        display: none; /* Hide the title text in mobile view */
+        display: none;
+        /* Hide the title text in mobile view */
     }
 
     #sidebar {
-        display: none; /* Hide the sidebar in mobile view */
+        display: none;
+        /* Hide the sidebar in mobile view */
     }
 
     #searchbar {
@@ -152,8 +166,10 @@
 
     .bookblocks {
         width: 100%;
-        color: white; /* Text color for book titles and authors */
-        padding: 10px; /* Add padding for better readability */
+        color: white;
+        /* Text color for book titles and authors */
+        padding: 10px;
+        /* Add padding for better readability */
     }
 
     #changepage {
